@@ -47,5 +47,25 @@ internal static class OreBoxUI
             "gold_spawner",
             SpriteTextureLoader.getSprite("ui/icons/buttons/gold_spawner")
         ));
+
+        tab.AddPowerButton("spawners", PowerButtonCreator.CreateGodPowerButton(
+            "stone_spawner",
+            SpriteTextureLoader.getSprite("ui/icons/buttons/stone_spawner")
+        ));
+
+        tab.AddPowerButton("spawners", PowerButtonCreator.CreateGodPowerButton(
+            "silver_spawner",
+            SpriteTextureLoader.getSprite("ui/icons/buttons/silver_spawner")
+        ));
+
+        tab.AddPowerButton("spawners", PowerButtonCreator.CreateGodPowerButton(
+            "mythril_spawner",
+            SpriteTextureLoader.getSprite("ui/icons/buttons/mythril_spawner")
+        ));
+
+        tab.AddPowerButton("spawners", PowerButtonCreator.CreateGodPowerButton(
+            "adamantine_spawner",
+            SpriteTextureLoader.getSprite("ui/icons/buttons/adamantine_spawner")
+        ));
     }
 }

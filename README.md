@@ -1,3 +1,1 @@
-A Worldbox mod that add primarily warfare content.
-
-[![](https://gamebanana.com/mods/embeddables/616451?type=large)](https://gamebanana.com/mods/616451)
+A Worldbox mod that adds resource spawners such as metal, gold, stone etc.

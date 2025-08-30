@@ -7,5 +7,17 @@
     "metal_spawner_description": "Spawn a node that spews metal ore",
 
     "gold_spawner": "Gold Spawner Node",
-    "gold_spawner_description": "Spawn a node that spews gold ore"
+    "gold_spawner_description": "Spawn a node that spews gold ore",
+
+    "stone_spawner": "Stone Spawner Node",
+    "stone_spawner_description": "Spawn a node that spews stone ore",
+
+    "silver_spawner": "Silver Spawner Node",
+    "silver_spawner_description": "Spawn a node that spews silver ore",
+
+    "mythril_spawner": "Mythril Spawner Node",
+    "mythril_spawner_description": "Spawn a node that spews mythril ore",
+
+    "adamantine_spawner": "Adamantine Spawner Node",
+    "adamantine_spawner_description": "Spawn a node that spews adamantine ore"
 }

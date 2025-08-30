@@ -40,7 +40,7 @@ internal static class OreBoxBuildings
         metal_spawner.spawn_drop_interval = 1f;
         metal_spawner.spawn_drop_min_height = 10f;
         metal_spawner.spawn_drop_min_radius = 1f;
-        metal_spawner.spawn_drop_max_radius = 12.5f;
+        metal_spawner.spawn_drop_max_radius = 10f;
         metal_spawner.spawn_drop_max_height = 20f;
         metal_spawner.spawn_drop_start_height = 10f;
 
@@ -48,11 +48,25 @@ internal static class OreBoxBuildings
         gold_spawner.sprite_path = "buildings/gold_spawner";
         gold_spawner.atlas_asset = AssetManager.dynamic_sprites_library.get("buildings");
         gold_spawner.spawn_drop_id = "gold";
-        gold_spawner.spawn_drop_max_radius = 8.5f;
 
-        BuildingAsset watch_tower = AssetManager.buildings.get("watch_tower_human");
-        watch_tower.upgrade_level = 1;
-        watch_tower.can_be_upgraded = true;
-        watch_tower.upgrade_to = "bunker";
+        BuildingAsset stone_spawner = AssetManager.buildings.clone("stone_spawner", metal_spawner.id);
+        stone_spawner.sprite_path = "buildings/stone_spawner";
+        stone_spawner.atlas_asset = AssetManager.dynamic_sprites_library.get("buildings");
+        stone_spawner.spawn_drop_id = "stone";
+
+        BuildingAsset silver_spawner = AssetManager.buildings.clone("silver_spawner", metal_spawner.id);
+        silver_spawner.sprite_path = "buildings/silver_spawner";
+        silver_spawner.atlas_asset = AssetManager.dynamic_sprites_library.get("buildings");
+        silver_spawner.spawn_drop_id = "silver";
+
+        BuildingAsset mythril_spawner = AssetManager.buildings.clone("mythril_spawner", metal_spawner.id);
+        mythril_spawner.sprite_path = "buildings/mythril_spawner";
+        mythril_spawner.atlas_asset = AssetManager.dynamic_sprites_library.get("buildings");
+        mythril_spawner.spawn_drop_id = "mythril";
+
+        BuildingAsset adamantine_spawner = AssetManager.buildings.clone("adamantine_spawner", metal_spawner.id);
+        adamantine_spawner.sprite_path = "buildings/adamantine_spawner";
+        adamantine_spawner.atlas_asset = AssetManager.dynamic_sprites_library.get("buildings");
+        adamantine_spawner.spawn_drop_id = "adamantine";
     }
 }
