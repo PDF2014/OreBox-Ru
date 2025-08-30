@@ -1,15 +1,13 @@
 using System;
 using NeoModLoader.api.attributes;
 
-namespace WarBox.Content;
+namespace OreBox.Content;
 
-internal static class WarBoxContent
+internal static class OreBoxContent
 {
     public static void Init()
     {
-        WarBoxBuildings.Init();
-        WarBoxGuns.Init();
-        WarBoxCulture.Init();
-        WarBoxGodPowers.Init();
+        OreBoxBuildings.Init();
+        OreBoxGodPowers.Init();
     }
 }

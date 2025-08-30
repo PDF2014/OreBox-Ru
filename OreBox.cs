@@ -1,7 +1,7 @@
 using System;
 using System.IO;
-using WarBox.Content;
-using WarBox.UI;
+using OreBox.Content;
+using OreBox.UI;
 using NeoModLoader.api;
 using NeoModLoader.api.attributes;
 using NeoModLoader.General;
@@ -9,9 +9,9 @@ using UnityEngine;
 using System.Reflection;
 using System.Collections.Generic;
 
-namespace WarBox;
+namespace OreBox;
 
-public class WarBox : BasicMod<WarBox>, IReloadable
+public class OreBox : BasicMod<OreBox>, IReloadable
 {
     public static Transform prefab_library;
 
@@ -36,8 +36,8 @@ public class WarBox : BasicMod<WarBox>, IReloadable
             Config.isEditor = true;
         }
 
-        WarBoxContent.Init();
-        WarBoxUI.Init();
+        OreBoxContent.Init();
+        OreBoxUI.Init();
     }
 
     public static void Called()

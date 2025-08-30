@@ -4,19 +4,19 @@
  *  该部分代码的实际作者是 Inmny. 最后更新: 2023/12/29
  */
 
-using WarBox.UI.Prefabs;
+using OreBox.UI.Prefabs;
 using NeoModLoader.General;
 using NeoModLoader.General.UI.Window;
 using NeoModLoader.General.UI.Window.Utils.Extensions;
 using UnityEngine;
 using UnityEngine.UI;
-namespace WarBox.UI.Windows;
+namespace OreBox.UI.Windows;
 
 /// <summary>
 ///     This is an example of window with auto layout.
 ///     <para>这是一个自动布局的窗口示例</para>
 /// </summary>
-public class WarBoxAutoLayoutWindow : AutoLayoutWindow<WarBoxAutoLayoutWindow>
+public class OreBoxAutoLayoutWindow : AutoLayoutWindow<OreBoxAutoLayoutWindow>
 {
     private Transform grid1;
     private Transform grid2;

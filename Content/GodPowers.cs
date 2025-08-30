@@ -3,9 +3,9 @@ using NeoModLoader.api;
 using NeoModLoader.api.features;
 using ReflectionUtility;
 
-namespace WarBox.Content;
+namespace OreBox.Content;
 
-internal static class WarBoxGodPowers
+internal static class OreBoxGodPowers
 {
     public static void Init()
     {

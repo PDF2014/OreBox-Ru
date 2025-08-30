@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <RootNamespace>WarBox</RootNamespace>
-        <AssemblyName>WarBox</AssemblyName>
+        <RootNamespace>OreBox</RootNamespace>
+        <AssemblyName>OreBox</AssemblyName>
         <TargetFramework>net48</TargetFramework>
         <DefineConstants>DEBUG;TRACE;一米_中文名</DefineConstants>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>

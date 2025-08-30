@@ -4,10 +4,10 @@ import sys
 
 def make_release(tag, output_dir="."):
     version = tag.lstrip("v")  # strip leading v if present
-    zip_name = f"WarBox{version}.zip"
+    zip_name = f"OreBox{version}.zip"
     output_path = os.path.join(output_dir, zip_name)
 
-    include = ["Content", "UI", "GameResources", "Locales", "WarBox.cs", "mod.json", "icon.png"]  # what to include
+    include = ["Content", "UI", "GameResources", "Locales", "OreBox.cs", "mod.json", "icon.png"]  # what to include
     with zipfile.ZipFile(output_path, "w", zipfile.ZIP_DEFLATED) as zf:
         for item in include:
             if os.path.isdir(item):

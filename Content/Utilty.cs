@@ -1,17 +1,17 @@
 using UnityEngine;
 using NeoModLoader.services;
 
-namespace WarBox.Content;
+namespace OreBox.Content;
 
-internal static class WarBoxUtils
+internal static class OreBoxUtils
 {
-    public static void WarBoxLog(string message)
+    public static void OreBoxLog(string message)
     {
-        LogService.LogInfo("[WarBox]: " + message);
+        LogService.LogInfo("[OreBox]: " + message);
     }
 
-    public static void WarBoxError(string message)
+    public static void OreBoxError(string message)
     {
-        LogService.LogError("[WarBox] Error:" + message);
+        LogService.LogError("[OreBox] Error:" + message);
     }
 }

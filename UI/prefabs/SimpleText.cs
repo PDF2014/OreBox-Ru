@@ -1,9 +1,9 @@
 using NeoModLoader.General.UI.Prefabs;
 using UnityEngine;
 using UnityEngine.UI;
-using WarBox;
+using OreBox;
 
-namespace WarBox.UI.Prefabs;
+namespace OreBox.UI.Prefabs;
 
 /// <summary>
 ///     A simple text prefab. Documentation is coming soon.
@@ -37,7 +37,7 @@ public class SimpleText : APrefab<SimpleText>
     private static void _init()
     {
         GameObject obj = new("SimpleText", typeof(Image));
-        obj.transform.SetParent(WarBox.prefab_library);
+        obj.transform.SetParent(OreBox.prefab_library);
         obj.GetComponent<Image>().sprite = SpriteTextureLoader.getSprite("ui/special/windowInnerSliced");
         obj.GetComponent<Image>().type = Image.Type.Sliced;
         obj.GetComponent<RectTransform>().sizeDelta = new Vector2(200, 18);

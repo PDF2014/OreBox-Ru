@@ -1,11 +1,11 @@
 {
-    "name": "WarBox",
+    "name": "OreBox",
     "author": "Erex147",
-    "version": "0.1.2",
+    "version": "0.1.0",
     "description": "A mod wip",
-    "GUID": "Erex147WarBox",
+    "GUID": "Erex147OreBox",
     "iconPath": "icon.png",
-    "RepoUrl": "https://github.com/Erex147/WarBox",
+    "RepoUrl": "https://github.com/Erex147/OreBox",
     "Dependencies": [],
     "OptionalDependencies": [],
     "IncompatibleWith": []

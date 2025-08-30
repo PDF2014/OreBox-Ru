@@ -38,7 +38,7 @@ jobs:
         run: |
           version="${{ github.event.inputs.tag }}"
           version="${version#v}"   # strip leading v
-          echo "zip=WarBox${version}.zip" >> $GITHUB_OUTPUT
+          echo "zip=OreBox${version}.zip" >> $GITHUB_OUTPUT
 
       - name: Decide release body
         id: notes
@@ -71,7 +71,7 @@ jobs:
         with:
           tag_name: ${{ github.event.inputs.tag }}
           release_name: ${{ github.event.inputs.title }}
-          body: "**Full Changelog**: https://github.com/Erex147/WarBox/commits/${{ github.event.inputs.tag }}"
+          body: "**Full Changelog**: https://github.com/Erex147/OreBox/commits/${{ github.event.inputs.tag }}"
           draft: false
           prerelease: false
 
