@@ -7,6 +7,7 @@ internal static class OreBoxBuildings
     public static void Init()
     {
         AddSpawners();
+        PreloadHelpers.preloadBuildingSprites();
     }
 
     private static void AddSpawners()
@@ -43,30 +44,36 @@ internal static class OreBoxBuildings
         metal_spawner.spawn_drop_max_radius = 10f;
         metal_spawner.spawn_drop_max_height = 20f;
         metal_spawner.spawn_drop_start_height = 10f;
+        metal_spawner.loadBuildingSprites();
 
         BuildingAsset gold_spawner = AssetManager.buildings.clone("gold_spawner", metal_spawner.id);
         gold_spawner.sprite_path = "buildings/gold_spawner";
         gold_spawner.atlas_asset = AssetManager.dynamic_sprites_library.get("buildings");
         gold_spawner.spawn_drop_id = "gold";
+        gold_spawner.loadBuildingSprites();
 
         BuildingAsset stone_spawner = AssetManager.buildings.clone("stone_spawner", metal_spawner.id);
         stone_spawner.sprite_path = "buildings/stone_spawner";
         stone_spawner.atlas_asset = AssetManager.dynamic_sprites_library.get("buildings");
         stone_spawner.spawn_drop_id = "stone";
+        stone_spawner.loadBuildingSprites();
 
         BuildingAsset silver_spawner = AssetManager.buildings.clone("silver_spawner", metal_spawner.id);
         silver_spawner.sprite_path = "buildings/silver_spawner";
         silver_spawner.atlas_asset = AssetManager.dynamic_sprites_library.get("buildings");
         silver_spawner.spawn_drop_id = "silver";
+        silver_spawner.loadBuildingSprites();
 
         BuildingAsset mythril_spawner = AssetManager.buildings.clone("mythril_spawner", metal_spawner.id);
         mythril_spawner.sprite_path = "buildings/mythril_spawner";
         mythril_spawner.atlas_asset = AssetManager.dynamic_sprites_library.get("buildings");
         mythril_spawner.spawn_drop_id = "mythril";
+        mythril_spawner.loadBuildingSprites();
 
         BuildingAsset adamantine_spawner = AssetManager.buildings.clone("adamantine_spawner", metal_spawner.id);
         adamantine_spawner.sprite_path = "buildings/adamantine_spawner";
         adamantine_spawner.atlas_asset = AssetManager.dynamic_sprites_library.get("buildings");
         adamantine_spawner.spawn_drop_id = "adamantine";
+        adamantine_spawner.loadBuildingSprites();
     }
 }
